@@ -10,18 +10,6 @@ function parse() {
   return JSON.parse(modifiedString)
 }
 
-function get_categories(data) {
-  return data?.[6]?.[13]
-}
-
-function get_thumbnail(data) {
-  return data?.[6]?.[72]?.[0]?.[1]?.[6]?.[0]
-}
-
-function get_place_id(data) {
-  return data?.[6]?.[78]
-}
-
 function get_description(data) {
   return data?.[6]?.[32]?.[1]?.[1]
 }
